@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Professional Page</title>
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for a professional look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Using the Inter font family */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-image: url('https://images.pexels.com/photos/238622/pexels-photo-238622.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        /* Add a dark overlay for better text readability */
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        /* Style for the buttons to match the screenshot */
+        .link-btn {
+            background-color: rgba(29, 39, 54, 0.8);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            transition: all 0.3s ease;
+        }
+        .link-btn:hover {
+            background-color: rgba(29, 39, 54, 1);
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <div class="overlay min-h-screen w-full flex flex-col items-center justify-center p-4">
+        <div class="w-full max-w-md mx-auto text-center text-white">
+            
+            <!-- Profile Picture -->
+            <img 
+                src="https://envs.sh/1Zl.jpg/IMG20251017469.jpg" 
+                alt="Profile Picture" 
+                class="w-28 h-28 md:w-32 md:h-32 rounded-full mx-auto border-4 border-gray-300 shadow-lg mb-4"
+            >
+
+            <!-- Name and Subtitle -->
+            <h1 class="text-3xl md:text-4xl font-bold tracking-wider">TONY STARK</h1>
+            <p class="text-gray-200 mt-1 md:mt-2 text-md md:text-lg">ʜᴇʟʟᴏ ᴍʏ sᴇʟғ ᴛᴏɴʏ</p>
+
+            <!-- Links Section -->
+            <div class="mt-8 space-y-4">
+                
+                <!-- About Me Button -->
+                <a href="https://t.me/About_Tony_stark" class="link-btn block w-full p-4 rounded-lg shadow-md">
+                    <h2 class="font-bold text-lg uppercase">About Me</h2>
+                    <p class="text-sm text-gray-300">Learn more about my journey</p>
+                </a>
+                
+                <!-- My Blog Button -->
+                <a href="https://t.me/Marvels36" class="link-btn block w-full p-4 rounded-lg shadow-md">
+                    <h2 class="font-bold text-lg uppercase">MY ACCOUNT</h2>
+                    <p class="text-sm text-gray-300">Any isuse for me</p>
+                </a>
+                
+                <!-- My Work/Portfolio Button -->
+                <a href="#" class="link-btn block w-full p-4 rounded-lg shadow-md">
+                    <h2 class="font-bold text-lg uppercase">My Instagram</h2>
+                                    <p class="text-sm text-gray-300">Check out my portfolio</p>
+                </a>
+
+                <!-- Contact Me Button -->
+                <a href="recover@telegram.org" class="link-btn block w-full p-4 rounded-lg shadow-md">
+                    <h2 class="font-bold text-lg uppercase">Contact Me</h2>
+                    <p class="text-sm text-gray-300">Let's get in touch</p>
+                </a>
+            </div>
+
+            <!-- Footer -->
+            <footer class="mt-12">
+                <p class="text-sm text-gray-400">Powered by Elvin<p/>
+            </footer>
+
+        </div>
+    </div>
+</body>
+</html>
+
